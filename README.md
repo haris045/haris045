@@ -55,34 +55,122 @@ aur network ko behtar manage aur secure kiya ja sakta hai. For example, ek IP ra
 devices ke liye use ho sake.
 
 Explain the purpose of a router.
+A router is a device that connects different networks, like your home network and the internet. It directs data between these networks, making sure information gets to the right place. It also helps manage internet traffic and can provide security for your network.
 
 What is a VLAN?
+A VLAN (Virtual Local Area Network) is a way to group devices on a network together, even if they are not physically connected to the same network switch. Think of it like creating a virtual network within a larger network.
+
+**Why use VLANs?**
+1. **Organization**: They help organize devices into different groups, which can improve network management.
+2. **Security**: They can isolate sensitive data and control who has access to it.
+3. **Efficiency**: They reduce broadcast traffic and improve overall network performance.
+4. **Flexibility**: They allow devices to be grouped logically, regardless of their physical location.
+
+In short, VLANs help manage, secure, and optimize network traffic.
 
 Describe the purpose of ARP (Address Resolution Protocol).
 
 Differentiate between a hub, switch, and router.
 
 What is a MAC address?
+How it Works:
+
+Every network device (like a computer or smartphone) has a MAC address embedded in its network card.
+When devices communicate over a network, they use MAC addresses to ensure the data is sent to the correct device.
+Purpose:
+
+Ensures that data packets are delivered to the right device on a local network.
 
 Explain the role of DHCP.
+How it Works:
+
+When you connect a device to a network, it sends a request to the DHCP server.
+The DHCP server responds by assigning an available IP address to the device, along with other network settings (like the default gateway and DNS servers).
+Purpose:
+
+Automates the process of assigning IP addresses to devices, which simplifies network setup and management.
 
 Define NAT (Network Address Translation).
+How it Works:
+
+When a device on a local network wants to access the internet, NAT translates the device's private IP address to a public IP address.
+The router keeps track of these translations, so when responses come back from the internet, NAT translates them back to the correct private IP address.
+Purpose:
+Allows multiple devices on a local network to share a single public IP address.
+Adds a layer of security by keeping internal IP addresses hidden from the outside world.
 
 What is DNS (Domain Name System)?
+What It Is:
+
+DNS is like the phone book of the internet. It translates human-friendly domain names (like www.example.com) into IP addresses that computers use to identify each other (like 192.0.2.1).
+Function and Purpose:
+
+Work: When you type a website address into your browser, DNS translates that address into an IP address so your browser can find and connect to the website.
+Purpose: Makes it easier for people to access websites without needing to remember numerical IP addresses.
 
 Describe the function of ICMP.
+What It Is:
+
+ICMP is a network protocol used for sending error messages and operational information about network conditions.
+Function and Purpose:
+
+Work: ICMP helps diagnose network issues by sending messages about errors, like if a destination is unreachable or if packets are being lost.
+Purpose: It helps network administrators understand and troubleshoot network problems.
 
 Differentiate between TCP and UDP.
+TCP (Transmission Control Protocol)
+
+Work: Establishes a connection between two devices and ensures that data is sent and received accurately and in order. It includes error-checking and retransmission of lost data.
+Purpose: Ensures reliable, orderly, and error-free data transmission, ideal for applications where accuracy is crucial (like web browsing and email).
+UDP (User Datagram Protocol)
+
+Work: Sends data without establishing a connection and without ensuring that data is received correctly. It doesn’t check for errors or guarantee order.
+Purpose: Provides faster data transmission with less overhead, suitable for applications where speed is more important than reliability (like video streaming and online gaming).
 
 What is a default gateway?
+What It Is:
+
+A default gateway is a router or device that serves as an access point or route from a local network to other networks, including the internet.
+Function and Purpose:
+
+Work: When a device wants to communicate with devices outside its local network, it sends data to the default gateway, which then forwards it to its destination.
+Purpose: Allows devices on a local network to communicate with devices on other networks and the internet.
 
 Explain the purpose of a firewall.
+Purpose:
+
+A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+Work and Purpose:
+
+Work: It acts as a barrier between your internal network and external networks (like the internet), blocking or allowing traffic based on security rules.
+Purpose: Protects your network from unauthorized access, threats, and attacks by controlling the traffic that enters and leaves.
 
 Describe the concept of QoS (Quality of Service).
+Purpose:
+
+QoS is a set of technologies that prioritize certain types of network traffic to ensure reliable and efficient performance for critical applications.
+Work and Purpose:
+
+Work: It manages network traffic to ensure that important applications (like video calls or online games) get the bandwidth they need, even when the network is busy.
+Purpose: Improves the performance and quality of critical applications by preventing them from being affected by less important traffic.
 
 What is a subnet mask?
+What It Is:
+
+A subnet mask is a number used in networking to divide an IP address into network and host portions.
+Work and Purpose:
+
+Work: It helps identify which part of an IP address refers to the network and which part refers to the device (host) on that network.
+Purpose: Allows for the creation of smaller, manageable networks within a larger network, helping to organize and improve network performance.
 
 Define the purpose of a loopback address.
+What It Is:
+
+A loopback address is a special IP address (usually 127.0.0.1 for IPv4) used to test network software on the same device.
+Work and Purpose:
+
+Work: When you send data to the loopback address, it gets routed back to the same device, allowing you to test network applications locally.
+Purpose: Helps verify that network applications and services are working correctly on the local device without needing an external network connection.
 
 Explain the difference between half-duplex and full-duplex communication.
 
